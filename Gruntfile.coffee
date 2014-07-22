@@ -48,4 +48,5 @@ module.exports = (grunt)->
   grunt.loadNpmTasks 'grunt-shell'
 
   grunt.registerTask 'install', ['bower:install', 'shell:bundleInstall']
+  grunt.registerTask 'build', ['coffee', 'stylus']
   grunt.registerTask 'default', ['watch']
