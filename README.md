@@ -19,7 +19,7 @@
 $ git clone https://github.com/choplin/my-webapp-templte
 $ cd my-webapp-template
 $ npm install
-$ grunt install
+$ grunt init
 ```
 
 ## Run
