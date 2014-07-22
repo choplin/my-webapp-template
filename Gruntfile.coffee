@@ -39,7 +39,8 @@ module.exports = (grunt)->
 
     clean:
       build: ['public/js', 'public/css']
-      install: ['bower_components', 'public/vendor', 'vendor/bundle']
+      install: ['public/vendor', 'vendor/bundle']
+      bower: ['bower_components']
       npm: ['node_modules']
 
     shell:
