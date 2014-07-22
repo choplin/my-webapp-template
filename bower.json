@@ -1,5 +1,6 @@
 {
-  "name": "sinatra-test",
+  "name": "my-webapp-template",
+  "private": true,
   "dependencies": {
     "knockoutjs": "~3.1.0",
     "jquery": "~2.1.1",
