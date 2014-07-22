@@ -37,6 +37,11 @@ module.exports = (grunt)->
         files:
           'public/css/app.css': 'src/stylus/*.stylus'
 
+    clean:
+      build: ['public/js', 'public/css']
+      install: ['bower_components', 'public/vendor', 'vendor/bundle']
+      npm: ['node_modules']
+
     shell:
       bundleInstall:
         command: 'bundle install --path=vendor/bundle'
@@ -45,6 +50,7 @@ module.exports = (grunt)->
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-stylus'
+  grunt.loadNpmTasks 'grunt-contrib-clean'
   grunt.loadNpmTasks 'grunt-shell'
 
   grunt.registerTask 'install', ['bower:install', 'shell:bundleInstall']
