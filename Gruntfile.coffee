@@ -39,13 +39,13 @@ module.exports = (grunt)->
 
     shell:
       bundleInstall:
-        command: "bundle install --path=vendor/bundle"
+        command: 'bundle install --path=vendor/bundle'
 
-  grunt.loadNpmTasks "grunt-bower-task"
+  grunt.loadNpmTasks 'grunt-bower-task'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-stylus'
   grunt.loadNpmTasks 'grunt-shell'
 
-  grunt.registerTask "install", ["bower:install", "shell:bundleInstall"]
+  grunt.registerTask 'install', ['bower:install', 'shell:bundleInstall']
   grunt.registerTask 'default', ['watch']
